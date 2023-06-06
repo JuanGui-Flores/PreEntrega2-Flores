@@ -50,5 +50,6 @@ function calcularPrecioFinal(precioBase, factorEdad, factorGenero, factorCobertu
 }
 
 function mostrarResultado(precioFinal) {
-    alert("El precio del seguro es: $" + precioFinal.toFixed(2));
+    var resultadoDiv = document.getElementById('resultado');
+    resultadoDiv.textContent = "El precio del seguro es: $" + precioFinal.toFixed(2);
 }
